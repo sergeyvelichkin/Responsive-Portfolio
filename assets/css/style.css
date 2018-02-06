@@ -1,0 +1,292 @@
+body    {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url("../images/back.png");
+    background-repeat:repeat;
+    
+}
+
+
+
+header{
+    background-color:#ffffff;
+    border-bottom: 5px;
+    border-bottom-color: black;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #cccccc;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+/* Header name element */
+#name-box {
+    background-color: #4aaaa5;
+    margin-left: 150px;
+    width: 20%;
+    height: 70px;
+    text-align: center;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+/* Header links*/
+#link-box {
+    float: right;
+    margin-right: 110px;
+    margin-top: 25px;
+    
+}
+
+#link-box a{
+    margin-left: 10px;
+    border-right: 1px solid #cccccc;
+    padding-right: 10px;
+    color: #777777;
+    text-decoration: none;
+}
+
+#link-box a:hover{
+    
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 5px;
+
+}
+
+
+/* Main content box */
+
+#main-content-small {
+    width: 55%;
+    margin: 40px 20px 20px 150px;
+    padding: 40px;
+    float: left;
+    background-color: #ffffff;
+    overflow: auto;
+    border: 1px solid #cccccc;
+    color: #777777
+
+}
+
+#main-content-small h1 {
+    color:#4aaaa5;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#main-content-small #text {
+    
+    line-height: 3;
+}
+
+hr {
+    margin: 15px 0 15px 0;
+    
+}
+
+#portfolioimg {
+    float: left;
+    margin:15px 30px 10px 0px;
+}
+
+/* Contact me box styles */
+#connect-box{
+    background-color: #ffffff;
+    margin-top: 40px;
+    padding: 20px;
+    float: left;
+    width: 20%;
+    overflow: auto;
+    border: 1px solid #cccccc;
+    
+
+}
+#connect-box h2{
+    color: #4aaaa5;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px; */
+    font-weight: bold;
+    
+}
+
+#connect-box img {
+    float: left;
+    width:60px;
+    height:60px;
+}
+
+#github {
+    margin-left: 15%;
+}
+
+/* Footer style */
+footer {
+    width: 100%;
+    height:70px;
+    background-color: #777777;
+    clear: both;
+    border-top: 6px solid #4aaaa5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+
+
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+/* Contact page form elements */
+
+input[type=text] {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    color: #cccccc;
+}
+textarea {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    color: #cccccc;
+}
+
+/* Submit button on contact page */
+input[type=submit] {
+    background-color: #4aaaa5;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px;
+    color:white;
+}
+
+
+/* Container holding the image and the text */
+.container  {
+    position: relative;
+    float: left;
+    margin: 15px 20px 10px 20px;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    background-color:#4aaaa5;
+    color: white;
+    padding: 20px;
+    width: 260px;
+    bottom: 20px;
+    left: 0px;
+
+}
+
+@media screen and (max-width: 1200px){
+    #main-content-small {
+        width:40%;
+    }
+
+    #github{
+        margin-left: 5%;
+    }
+    #main-content-small #text {
+    
+        line-height: 2;
+    }
+
+    #link-box a:hover{
+    
+        padding: 0;
+    
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    #name-box{
+        margin-left: 50px;
+
+    }
+    
+    
+    #main-content-small {
+        width:80%;
+        margin-left: 50px;
+    }
+
+    
+    #link-box {
+        margin-right: 25px;
+       
+    }
+
+    #connect-box{
+    width: 80%;
+    margin: 40px 20px 20px 50px;
+    padding: 40px;
+    float: left;
+    
+    }
+
+    #github{
+        margin-left: 30%;
+    }
+    #link-box a:hover{
+    
+        padding: 0;
+    
+    }
+
+}
+
+@media screen and (max-width: 640px){
+
+    #name-box{
+        width: 100%;
+        margin-left:0;
+
+
+    }
+
+    #main-content-small{
+        width: 75%;
+        margin-bottom: 0;
+    }
+
+    #link-box{
+        width: 100%;
+        float: left;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-top: 0;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    #connect-box{
+        width: 75%;
+    }
+
+    #link-box a:hover{
+    
+        padding: 0;
+    
+    }
+}
